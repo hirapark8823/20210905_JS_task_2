@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kukatachi.css">
+    <title>盟神探湯-top-</title>
+</head>
+
+<body>
+    <wrapper class="wrapper">
+        <h1 class="title">盟神探湯</h1>
+        <h2 class="subtitle">KUGATACHI</h2>
+        <p class="title_text">
+            古代日本の裁判の一種<br>身の潔白を証明するため，疑いをかけられた者は熱湯に手を入れその火傷具合で是非を判断される<br>正直者はどれだけ長く手を入れても火傷しなかったらしい・・・
+        </p>
+        <ul class="title_list">
+            <li class="top_btn"><a
+                    href="file:///Users/naohira8823/Desktop/G's%20academy/20210905_JS/01_js01_20210905/01_js01_sample/kukatachi_main.html">裁判を受ける</a>
+            </li>
+            <li><img src="img/盟神探湯.jpeg" alt="TOP_IMG"></li>
+            <li id="escape_button" class="top_btn"><a href="#start">裁判を受けない</a></li>
+        </ul>
+    </wrapper>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        //top pageアニメーション
+        $("#escape_button").on("click", function () {
+            alert('逃げられない！');
+        });
+    </script>
+
+</body>
+
+</html>

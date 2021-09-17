@@ -1,0 +1,91 @@
+/* トップページ */
+.top_page img{
+    object-fit: cover;
+}
+.top_page{
+    text-align: center;
+}
+
+/* メインページ */
+body{
+    background-image: url(/img/IMG_0618.jpeg);
+    background-size: contain;
+    width: 1400px;
+    height: 690px;
+}
+.main_page{
+    max-width: 960px;
+    max-height: 800px;
+    position: relative;
+}
+
+/* トリップボタン? */
+.trip_btn2{
+    position: absolute;
+    top: 220px;
+    left: 870px;
+    z-index: 1000;
+}
+
+/* サイコロボード */
+#xi_board img{
+    width: 41%;
+    position: relative;
+    left: 31%;
+}
+.title{
+    position: absolute;
+    top: 6px;
+    left: 355px;
+    font-size: 24px;
+    text-align: center;
+}
+.xi_list{
+    list-style: none;
+    position: absolute;
+    top: 116px;
+    left: 345px;
+    font-size: 18px;
+}
+.xi_list li{
+    margin-bottom: 44px;
+}
+
+/* サイコロボタン */
+.xi{
+    width: 415px;
+    height: 192px;
+    padding-top: 94px;
+    border: rgb(101, 104, 103) solid 2px;
+    background-color: rgb(182, 180, 178);
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    right: -150px;
+}
+
+/* 残り時間画面 */
+#time_limit{
+    font-size: 24px;
+    width: 415px;
+    height: 251px;
+    padding-top: 20px;
+    border: rgb(101, 104, 103) solid 2px;
+    background-color: rgb(182, 180, 178);
+    position: absolute;
+    top: 264px;
+    right: -150px;
+    text-align: center;
+}
+
+/* 旅ログ画面 */
+.trip_log_wrapper{
+    width: 788px;
+    height: 119px;
+    padding: 0 10px;
+    border: rgb(101, 104, 103) solid 2px;
+    background-color: rgb(182, 180, 178);
+    position: absolute;
+    top: 99%;
+    left: 31%;
+}

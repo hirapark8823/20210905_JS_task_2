@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/kukatachi.css">
+  <title>盟神探湯-main-</title>
+</head>
+
+<body id="body">
+  <main id="main">
+    <div class="main_img"><img src="img/uranaishi.jpeg" alt="武内宿禰"></div>
+    <p id="question">どうする？</p>
+    <ul id="select_item">
+      <li id="five_secounds"><button type="button">５秒手を入れる</button></li>
+      <li id="two_secounds"><button type="button">２秒手を入れる</button></li>
+      <li id="zero_secounds"><button type="button">手を入れない</button></li>
+    </ul>
+    <div id="judge">判決！</div>
+  </main>
+
+  <footer>Presented by Hira-park</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    //メインページ
+    //５秒
+    $('#five_secounds').on('click', function () {
+      const min = 0
+      const max = 2
+      const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+      //火傷なし
+      if (randomNumber == 0) {
+        $('#select_item').remove();
+        $('#question').remove();
+        $('#judge').text('火傷なし！無罪！');
+        //微妙な火傷
+      } else if (randomNumber == 1) {
+        // $('#select_item').remove();
+        $('#question').remove();
+        $('#judge').text('微妙な火傷・・・もう一度熱湯に手を入れなければならない');
+      } else if (randomNumber == 2) {
+        //大火傷
+        $('#select_item').remove();
+        $('#question').remove();
+        $('#judge').text('大火傷！死亡！（理不尽）');
+      }
+    });
+    //2秒
+    $('#two_secounds').on('click', function () {
+      const min = 0
+      const max = 2
+      const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+      //火傷なし
+      if (randomNumber == 0) {
+        $('#select_item').remove();
+        $('#question').remove();
+        $('#judge').text('火傷なし！無罪！');
+        //微妙な火傷
+      } else if (randomNumber == 1) {
+        // $('#select_item').remove();
+        $('#question').remove();
+        $('#judge').text('微妙な火傷・・・もう一度熱湯に手を入れなければならない');
+      } else if (randomNumber == 2) {
+        //大火傷
+        $('#select_item').remove();
+        $('#question').remove();
+        $('#judge').text('大火傷！死亡！（理不尽）');
+      }
+    });
+    //0秒
+    $('#zero_secounds').on('click', function () {
+      $('#select_item').remove();
+      $('#question').remove();
+      $('#judge').text('問答無用で死罪').css('color', '#da0606ee');
+      $('#body').css("background-color", "#000000");
+    });
+
+  </script>
+
+</body>
+
+</html>

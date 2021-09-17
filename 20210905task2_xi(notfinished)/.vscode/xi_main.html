@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="xi.css">
+    <title>サイコロの旅-main-</title>
+</head>
+
+<body>
+    <!-- tripボタン? -->
+    <div class="trip_btn2">
+        <button id="trip_btn">旅に出る</button>
+    </div>
+
+    <!-- サイコロボード -->
+    <div class="main_page">
+        <div id="xi_board">
+            <div>
+                <img src="../img/20190811070619.jpeg" alt="サイコロボード">
+            </div>
+            <h1 class="title">72時間以内に<br>福岡まで戻ってきて下さい</h1>
+            <ul class="xi_list">
+                <li id="xi_item1">福岡から飛行機で東京！3時間</li>
+                <li id="xi_item2">福岡から飛行機で札幌！4時間</li>
+                <li id="xi_item3">福岡から深夜バスで東京！16時間</li>
+                <li id="xi_item4">福岡から飛行機で沖縄！2時間</li>
+                <li id="xi_item5">福岡から飛行機で金沢！2時間</li>
+                <li id="xi_item6">福岡から深夜バスで大阪！9時間</li>
+            </ul>
+        </div>
+
+        <!-- サイコロ画面 -->
+        <div class="xi">
+            <div id="saikoro"></div>
+            <p><input type="button" id="btn" value="①サイコロを振る" onclick="saikoro()"></p>
+        </div>
+
+        <!-- 残り時間画面 -->
+        <h2 id="time_limit">残り時間</h2>
+
+        <!-- 旅履歴 -->
+        <div class="trip_log_wrapper">
+            <h2 class="trip_log_title">旅ログ</h2>
+            <p id="trip_log">福岡→</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="xi.js"></script>
+    <script type="text/javascript" src="xi_board.js"></script>
+</body>
+
+</html>
